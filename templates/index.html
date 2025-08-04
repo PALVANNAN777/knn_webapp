@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNN Breast Cancer Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Prediction using KNN</h1>
+        <form action="/predict" method="POST">
+            {% for i in range(1, 31) %}
+                <label for="feature{{ i }}">Feature {{ i }}:</label>
+                <input type="number" step="any" name="feature{{ i }}" required><br>
+            {% endfor %}
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2>{{ prediction_text or "Waiting for prediction..." }}</h2>
+    </div>
+</body>
+</html>

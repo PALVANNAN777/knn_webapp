@@ -14,6 +14,6 @@ A simple Flask web application that predicts whether a tumor is malignant or ben
 pip install -r requirements.txt
 python3 app.py
 
-## 📽️ Demo Video
+## 📽️ Project Video
 
 [Click here to watch the demo](https://drive.google.com/file/d/1gWxJIm5eKOZBSV9rS6J8aFHpBt0-Rtbw/view?usp=drivesdk)
